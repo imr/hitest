@@ -1,0 +1,1 @@
+hitest is a hierarchical parallel processing test program, mostly used to test MPI, OpenMP, and CUDA on Grid Engine.
