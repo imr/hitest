@@ -1,7 +1,7 @@
 #
-CC=/opt/nvidia/cuda/bin/nvcc
-CFLAGS= -I/usr/include/openmpi-x86_64 -I/opt/nvidia/cuda/include 
-LDFLAGS= -L/usr/lib64/openmpi/lib -L/opt/nvidia/cuda/lib
+CC=/usr/local/cuda/bin/nvcc
+CFLAGS= -I/usr/lib64/openmpi/1.4-gcc/include -I/usr/local/cuda/include 
+LDFLAGS= -L/usr/lib64/openmpi/1.4-gcc/lib -L/usr/local/cuda/lib
 LIB= -lgomp -lcuda -lmpi
 SOURCES= main.cu
 EXECNAME= hitest
